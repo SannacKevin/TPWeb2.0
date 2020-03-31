@@ -1,0 +1,36 @@
+.card {
+    max-width: 100%;
+  }
+  
+  .example-header-image {
+    background-image: url('./../../assets/video/vegetable.mp4');
+    background-size: cover;
+  }
+  
+  iframe{
+    position: absolute;
+    top:0px;
+    left:0px;
+    
+    height: 800px;
+    overflow: hidden;
+  }
+
+  h1{
+      text-align:center;
+      font-size: 100px;
+      color:white;
+      z-index:1;
+      top:300px;
+      position: absolute;
+  }
+
+  h2{
+    text-align:center;
+    font-size: 40px;
+    color:white;
+    z-index:1;
+    top:400px;
+    left: 30px;
+    position: absolute;
+}

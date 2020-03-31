@@ -1,0 +1,22 @@
+@import "~src/variable";
+
+.day{
+    display: inline-block;
+    border-radius: 5px;
+    width: 200px;
+    text-align:center;
+    background-color: $primary-grey;
+    height: 150px;
+    margin: 20px;
+    color: $primary-bluedark;
+    padding: 15px;
+}
+
+.day h3{
+    font-size: 25px;
+}
+
+
+span{
+    
+}

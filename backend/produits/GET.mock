@@ -1,0 +1,36 @@
+HTTP/1.1 200 OK 
+Content-Type: application/json; charset=utf-8 
+Access-Control-Allow-Origin: * 
+
+[
+	{
+        "nom": "Fraises",
+        "categorie": "fruit",
+        "url": "https://static.passeportsante.net/680x357/i91972-.jpeg",
+		"description":"testjifejgijge"
+    },
+	{
+        "nom": "Carottes",
+        "categorie": "legume",
+        "url":"https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ffac.2F2019.2F12.2F05.2F6b4e7b02-353c-40db-afc8-4e3e29eca08d.2Ejpeg/737x415/quality/90/crop-from/center/comment-faire-une-puree-de-carottes.jpeg",
+		"description":"testjifejgijge"
+	},
+    {
+        "nom": "Pomme de terre",
+        "categorie": "legume",
+        "url":"https://www.famileat.fr/wp-content/uploads/2018/08/famileat-poivrons.jpg",
+		"description":"testjifejgijge"
+    },
+    {
+        "nom": "Courgettes",
+        "categorie": "legume",
+        "url":"https://www.lespaniersdavoine.com/media/catalog/product/c/o/resized/courgettes-bio_ok_1024_product_view.jpg",
+		"description":"testjifejgijge"
+    },
+    {
+        "nom": "Tomate",
+        "categorie": "legume",
+        "url":"https://jardinage.lemonde.fr/images/dossiers/2017-07/romaines-182914.jpg",
+		"description":"testjifejgijge"
+    }
+]

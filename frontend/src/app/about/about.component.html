@@ -1,0 +1,114 @@
+<mat-card>
+    <mat-card-header class="header">
+      
+      <mat-card-title>Qui sommes-nous ?</mat-card-title> <br/>
+      <mat-card-subtitle>La ferme en folie</mat-card-subtitle>
+
+
+    </mat-card-header>
+
+    <img mat-card-image src="https://cdn.bioalaune.com/img/article/thumb/900x500/28986-10_fruits_et_legumes_a_deguster_en_juillet.jpg" alt="Des fruits en folie">
+    <mat-card-content class="content">
+      <p>
+        Nous serons ravis de vous faire découvrir nos produits et de vous faire vivre des expériences inoubliables à la ferme.
+      </p>
+      <p>
+        Découvrez et dégustez la variété des produits de la ferme: fruits, légumes, viandes, poissons, alcools, vins, jus, et autres produits non alimentaires (laine, plantes, ...).
+  
+        Notre réseau de points de vente vous permet de manger des produits locaux sains, frais et de saison chaque jour où que vous soyez !
+      </p>
+      <p>
+        Venez découvrir l'authenticité d'un repas cuisiné par nos fermiers ! Que ce soit pour une dégustation, un apéritif, un goûter ou un repas en ferme auberge, régalez-vous de nos produits fermiers du terroir (charcuterie et salaisons, fruits et légumes, fromages, vins…), vous serez étonnés de la variété des spécialités gastronomiques de nos régions !
+  
+        Certaines fermes peuvent vous proposer des sacs pique-nique prêts à la dégustation, des cours de cuisine de produits du terroir et bien d’autres animations…
+      </p>
+      <p>
+        Pour des vacances en famille ou le temps d’un week-end entre amis, profitez d’un séjour 100 % fermier loin des fracas de la ville !
+  
+        Séjourner à la ferme, c’est goûter à un cadre naturel, reposant et authentique, tout en découvrant la région et son terroir autrement. Camping, gîte, chambre d'hôtes, hébergement insolite, aire de service pour camping-car... il y en a pour tous les goûts !
+       
+        Pensez aussi à offrir à vos enfants des moments inoubliables dans l’une de nos fermes "vacances d'enfants".
+       
+      </p>
+      <p>
+        Envie de découvrir le savoir-faire de nos fermiers ? Que vous soyez, en groupe, en famille ou entre amis, avec votre classe ou en centre de loisirs, des activités variées, pédagogiques et ludiques, vous sont proposées.
+        Il y en a pour tous les âges et pour toutes les passions : traire une vache, randonner dans les vignes, explorer la campagne à cheval, découvrir la fabrication du fromage de chèvre…
+        Partez à la rencontre de nos agriculteurs et partagez des moments inoubliables.
+       
+        A toute heure et en toute saison, vivez l'expérience de la ferme !
+      </p>
+    </mat-card-content>
+
+
+   
+
+ 
+
+
+  <div class="container">
+    <h1>Legumes</h1>
+    <div class="contenu">
+        <ng-container *ngFor="let produit of produits | async">
+            <div *ngIf='produit.categorie == "legume"'>
+              <mat-card class="legumes">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{produit.nom}}</mat-card-title>
+                  <mat-card-subtitle>{{produit.categorie}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{produit.url}}" alt="{{produit.nom}}">
+                <mat-card-content>
+                  <p>
+                   {{produit.description}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+
+
+            </div>
+        </ng-container>
+    </div>
+  </div>
+
+
+
+
+<div class="container">
+  <br/><h1>Fruits</h1>
+  <div class="contenu">
+      <ng-container *ngFor="let produit of produits | async">
+          <div *ngIf='produit.categorie == "fruit"'>
+                  
+            <mat-card class="fruits">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{produit.nom}}</mat-card-title>
+                <mat-card-subtitle>{{produit.categorie}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="{{produit.url}}" alt="{{produit.nom}}">
+              <mat-card-content>
+                <p>
+                  {{produit.description}}
+
+                </p>
+              </mat-card-content>
+            </mat-card>
+
+          </div>
+      </ng-container>
+
+  </div>
+
+</div>
+
+<div class="espace"></div>
+
+
+
+
+
+
+
+
+
+  

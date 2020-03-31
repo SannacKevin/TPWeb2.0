@@ -1,0 +1,24 @@
+img, p, .header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+ }
+ 
+ .legumes {
+    max-width: 400px;
+    min-height: 200px;
+    display: block;
+    float: left;
+  }
+
+  .fruits {
+    max-width: 400px;
+    min-height: 200px;
+    display: block;
+    float: left;
+  }
+ .espace{
+    position: relative;
+    height: 500px;
+  }

@@ -1,0 +1,13 @@
+@import "~src/variable";
+ 
+.footer {
+   width:100%;
+   background:$primary-bluedark;
+   color:$primary-white;
+   display: block;
+}
+ 
+.center {
+   text-align: center;
+   margin: auto;
+}

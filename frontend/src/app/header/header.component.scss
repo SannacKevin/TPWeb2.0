@@ -1,0 +1,28 @@
+@import "~src/variable";
+
+mat-toolbar
+{
+    background-color: $primary-bluedark;
+    color: white;
+}
+
+.item{
+    
+    display: inline-block;
+    text-align: center;
+    color:white;
+    width: 200px;
+    font-size:15px;
+}
+
+.info{
+    width:150px;
+}
+
+.unitem{
+    color:black;
+}
+
+a{
+    text-decoration: none;
+}
