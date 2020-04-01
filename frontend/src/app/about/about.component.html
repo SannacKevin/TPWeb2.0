@@ -45,61 +45,43 @@
  
 
 
-  <div class="container">
+ 
     <h1>Legumes</h1>
     <div class="contenu">
         <ng-container *ngFor="let produit of produits | async">
             <div *ngIf='produit.categorie == "legume"'>
-              <mat-card class="legumes">
-                <mat-card-header>
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>{{produit.nom}}</mat-card-title>
-                  <mat-card-subtitle>{{produit.categorie}}</mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image src="{{produit.url}}" alt="{{produit.nom}}">
-                <mat-card-content>
+              <div class="legumes">       
+                  <h2>{{produit.nom}}</h2>
+                  <h4>{{produit.categorie}}</h4>
+                <img src="{{produit.url}}" alt="{{produit.nom}}">
+
                   <p>
                    {{produit.description}}
                   </p>
-                </mat-card-content>
-              </mat-card>
-
-
+              </div>
             </div>
         </ng-container>
     </div>
-  </div>
 
+<br/>
+<br/>
+    <h1>Fruit</h1>
+    <div class="contenu">
+        <ng-container *ngFor="let produit of produits | async">
+            <div *ngIf='produit.categorie == "fruit"'>
+              <div class="Fruit">       
+                  <h2>{{produit.nom}}</h2>
+                  <h4>{{produit.categorie}}</h4>
+                <img src="{{produit.url}}" alt="{{produit.nom}}">
 
+                  <p>
+                   {{produit.description}}
+                  </p>
+              </div>
+            </div>
+        </ng-container>
+    </div>
 
-
-<div class="container">
-  <br/><h1>Fruits</h1>
-  <div class="contenu">
-      <ng-container *ngFor="let produit of produits | async">
-          <div *ngIf='produit.categorie == "fruit"'>
-                  
-            <mat-card class="fruits">
-              <mat-card-header>
-                <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>{{produit.nom}}</mat-card-title>
-                <mat-card-subtitle>{{produit.categorie}}</mat-card-subtitle>
-              </mat-card-header>
-              <img mat-card-image src="{{produit.url}}" alt="{{produit.nom}}">
-              <mat-card-content>
-                <p>
-                  {{produit.description}}
-
-                </p>
-              </mat-card-content>
-            </mat-card>
-
-          </div>
-      </ng-container>
-
-  </div>
-
-</div>
 
 <div class="espace"></div>
 

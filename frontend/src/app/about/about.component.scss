@@ -1,3 +1,6 @@
+@import "~src/variable";
+
+
 img, p, .header {
     display: block;
     margin-left: auto;
@@ -5,20 +8,24 @@ img, p, .header {
     max-width: 60%;
  }
  
- .legumes {
-    max-width: 400px;
-    min-height: 200px;
-    display: block;
-    float: left;
-  }
+.contenu{
+  display: block;
+  position: relative;
+}
 
-  .fruits {
-    max-width: 400px;
-    min-height: 200px;
-    display: block;
-    float: left;
-  }
- .espace{
-    position: relative;
-    height: 500px;
-  }
+.legumes , .Fruit{
+margin: 0 auto;
+float: left;
+width: 300px;
+background-color: $primary-grey;
+min-height:  350px;
+border-radius: 10px;
+color:$primary-white;
+padding:5px;
+margin: 5px;
+}
+
+
+.espace{
+  height: 370px;
+}
