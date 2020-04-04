@@ -7,7 +7,6 @@ import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,6 +19,7 @@ import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AdministrationComponent } from './administration/administration.component';
+import { SharedService } from './common/shared.service';
 
 
 
@@ -48,7 +48,7 @@ import { AdministrationComponent } from './administration/administration.compone
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

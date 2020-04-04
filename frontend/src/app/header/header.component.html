@@ -13,7 +13,6 @@
   <span [matMenuTriggerFor]="appMenu">
     <button mat-menu-item class="item info">Informations</button>
   </span>
-
-  <a href="/admin"><button mat-menu-item class= "item">Administration</button></a>
-
+  <div *ngIf="!estConnecte();"><a href="/admin"><button mat-menu-item class= "item">Administration</button></a></div>
+  
 </mat-toolbar>

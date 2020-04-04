@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from "../common/shared.service";
 
 
 @Component({
@@ -8,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sharedService: SharedService) { }
+
+  estConnecte() : boolean {
+    return this.sharedService.estConnecte();
+  }
 
   ngOnInit(): void {
   }
