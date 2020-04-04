@@ -1,17 +1,19 @@
 <mat-toolbar>
-    <span>La ferme en folie</span>
+  <span>La ferme en folie</span>
 
-   <a href="/home"><button mat-menu-item class= "item" >Accueil</button></a>
-    <a href="/about"><button mat-menu-item class= "item">A propos</button></a>
+  <a href="/home"><button mat-menu-item class="item">Accueil</button></a>
+  <a href="/about"><button mat-menu-item class="item">A propos</button></a>
 
-    <mat-menu #appMenu="matMenu">
-        <a href="infos/agenda"><button mat-menu-item class="unitem">Horaires</button></a>
-        <a href="infos/map"><button mat-menu-item class="unitem">Où nous trouver ?</button></a>
-        <a href="infos/contact"><button mat-menu-item class="unitem">Nous contacter ?</button></a>
-      </mat-menu>
-      
-      <span [matMenuTriggerFor]="appMenu">
-        <button mat-menu-item class="item info">Informations</button>
-      </span>
-   
+  <mat-menu #appMenu="matMenu">
+    <a href="infos/agenda"><button mat-menu-item class="unitem">Horaires</button></a>
+    <a href="infos/map"><button mat-menu-item class="unitem">Où nous trouver ?</button></a>
+    <a href="infos/contact"><button mat-menu-item class="unitem">Nous contacter ?</button></a>
+  </mat-menu>
+
+  <span [matMenuTriggerFor]="appMenu">
+    <button mat-menu-item class="item info">Informations</button>
+  </span>
+
+  <a href="/admin"><button mat-menu-item class= "item">Administration</button></a>
+
 </mat-toolbar>
