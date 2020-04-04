@@ -7,6 +7,7 @@ import { InfosComponent } from './infos/infos.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdministrationComponent } from './administration/administration.component';
  
  
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
  {
   path:'home',
   component:HomeComponent,
+},
+{
+  path:'admin',
+  component:AdministrationComponent,
 },
  {
    path:'infos',

@@ -19,6 +19,7 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { MapComponent } from './map/map.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { AdministrationComponent } from './administration/administration.component';
 
 
 
@@ -33,6 +34,7 @@ import { HomeComponent } from './home/home.component';
     MapComponent,
     ContactComponent,
     HomeComponent,
+    AdministrationComponent,
     
   ],
   imports: [
